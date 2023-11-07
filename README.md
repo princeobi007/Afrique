@@ -19,7 +19,7 @@ Start by cloning the git repo locally.
 To retrieve the project dependencies and before any further tasks will run correctly.
 
 ```shell
-bun install --frozen-lockfile
+npm install 
 ```
 
 #### Husky Git Commit Hooks
