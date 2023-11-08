@@ -24,11 +24,11 @@ export default {
             allowUnlimitedContractSize: false,
             loggingEnabled: true
         },
-        polygonMumbai: {
-            url: 'https://rpc.ankr.com/polygon_mumbai',
-            chainId: 80001,
+        sepolia: {
+            url: 'https://rpc.sepolia.org',
+            chainId: 11155111,
             loggingEnabled: true,
-            accounts: [process.env.PRIVATE_KEY],
+            accounts: [process.env.SEPOLIA_PRIVATE_KEY],
             saveDeployments: true,
             zksync: false
         }
@@ -53,7 +53,7 @@ export default {
     },
     etherscan: {
         apiKey: {
-            polygonMumbai: process.env.POLYGONSCAN_KEY
+            sepolia: process.env.ETHERSCAN_API_KEY
         }
     }
 }
